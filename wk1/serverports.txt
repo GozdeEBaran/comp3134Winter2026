@@ -1,0 +1,122 @@
+Week 1 Lab - Server Ports Research
+===================================
+Student Name: [Your Name]
+Student ID: [Your ID]
+
+
+Question 1: What is the definition of server port?
+---------------------------------------------------
+
+A server port is like a door number on a computer that helps direct internet traffic to the right place.
+
+Simple Explanation:
+Imagine a big apartment building. The building has ONE street address (this is like an IP address).
+But inside, there are many apartments (these are like ports). Each apartment has its own number.
+
+When you want to visit someone, you need:
+- The building address (IP address like 192.168.1.1)
+- The apartment number (Port number like 80 or 443)
+
+So a port is basically a numbered channel that lets different services run on the same computer at the same time.
+
+Example:
+- When you visit a website, your browser connects to Port 80 or 443
+- When you send an email, it uses Port 25
+- When you use SSH (like we did for the droplet), it uses Port 22
+
+
+Question 2: What is server port range?
+---------------------------------------
+
+Port numbers go from 0 to 65,535 (that's 65,536 total ports!)
+
+They are divided into 3 groups:
+
+1. Well-Known Ports (0-1023)
+   - These are the "VIP" ports reserved for important services
+   - You need admin/root permission to use them
+   - Examples: Port 80 (websites), Port 22 (SSH)
+
+2. Registered Ports (1024-49151)
+   - These are for regular applications and services
+   - Anyone can use them
+   - Examples: Port 3306 (MySQL database), Port 8080 (backup web server)
+
+3. Dynamic/Private Ports (49152-65535)
+   - These are temporary ports
+   - Your computer uses them when connecting to websites
+   - Like a "throwaway" phone number
+
+
+Question 3: How many bits does the number above represent?
+-----------------------------------------------------------
+
+Answer: 16 bits
+
+Why?
+- Port numbers range from 0 to 65,535
+- That's exactly 2^16 = 65,536 possible numbers
+- So computers store port numbers using 16 bits
+
+Quick Math:
+2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 = 65,536
+
+Think of it like:
+- 16 light switches that can be ON or OFF
+- That gives you 65,536 different combinations!
+
+
+Question 4: State 10 common server ports
+-----------------------------------------
+
+1. Port 22 - SSH (Secure Shell)
+   What it does: Lets you securely connect to remote servers
+   Real life use: When you typed "ssh root@178.128.236.255" - you used Port 22!
+   Security: Encrypted (safe)
+
+2. Port 80 - HTTP (Web Traffic)
+   What it does: Regular website traffic
+   Real life use: When you visit http://example.com
+   Security: Not encrypted (anyone can see your data)
+
+3. Port 443 - HTTPS (Secure Web Traffic)
+   What it does: Secure website traffic
+   Real life use: When you visit https://google.com or online banking
+   Security: Encrypted (safe) - you'll see a padlock icon in browser
+
+4. Port 21 - FTP (File Transfer Protocol)
+   What it does: Upload/download files to a server
+   Real life use: Web developers uploading website files
+   Security: Not encrypted (old technology)
+
+5. Port 25 - SMTP (Email Sending)
+   What it does: Sends emails between email servers
+   Real life use: When you click "Send" in Gmail, it uses this port
+   Security: Can be encrypted or not
+
+6. Port 53 - DNS (Domain Name System)
+   What it does: Converts website names to IP addresses
+   Real life use: When you type "google.com", DNS finds its IP address
+   Security: Usually not encrypted (but there's DNS over HTTPS now)
+
+7. Port 3306 - MySQL Database
+   What it does: Connects to MySQL databases
+   Real life use: WordPress websites, web apps storing user data
+   Security: Should be behind a firewall
+
+8. Port 3389 - RDP (Remote Desktop)
+   What it does: Control Windows computers remotely (like TeamViewer)
+   Real life use: IT support accessing your computer to help you
+   Security: Encrypted, but often targeted by hackers
+
+9. Port 8080 - HTTP Alternative
+   What it does: Backup port for web servers
+   Real life use: When testing websites locally (localhost:8080)
+   Security: Not encrypted (just like Port 80)
+
+10. Port 110 - POP3 (Email Receiving)
+    What it does: Download emails from mail server to your device
+    Real life use: Outlook or Thunderbird downloading your emails
+    Security: Not encrypted (unless using Port 995 for secure POP3)
+
+
