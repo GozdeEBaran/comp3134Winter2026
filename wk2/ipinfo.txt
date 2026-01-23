@@ -1,0 +1,39 @@
+IP Address and Geolocation Lookup Results
+==========================================
+
+Domain 1: atasun.com
+----------------------------
+IP Address: 91.191.170.180
+Canonical Name: izm.netdirekt.com.tr
+Owner/ISP: Netdirekt A.S.
+Geolocation: Turkey (TR)
+
+
+Domain 2: tatasteel.com
+----------------------------
+IP Address: 18.173.219.50
+Owner/ISP: Amazon.com Inc.
+Geolocation: United States (US)
+
+
+Domain 3: torontopubliclibrary.com
+----------------------------
+IP Address: 216.40.34.41
+Owner/ISP: Tucows.com Co.
+Geolocation: Canada (CA)
+
+
+Domain 4: sephora.com
+----------------------------
+IP Address: 91.207.212.79
+Canonical Name: mxb-0024c501.gslb.pphosted.com
+Owner/ISP: Proofpoint Inc.
+Geolocation: United Kingdom (UK)
+
+
+Domain 5: beymen.com
+----------------------------
+IP Address: 45.223.136.87
+Owner/ISP: Incapsula Inc
+Geolocation: United States (US)
+

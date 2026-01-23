@@ -1,0 +1,12 @@
+Traceroute Test from Local Machine to Droplet
+==============================================
+
+traceroute 178.128.236.255
+
+Output:
+-------
+root@comp3134-GB:~# traceroute 178.128.236.255
+traceroute to 178.128.236.255 (178.128.236.255), 30 hops max, 60 byte packets
+ 1  comp3134-GB (178.128.236.255)  0.030 ms  0.006 ms  0.006 ms
+root@comp3134-GB:~# 
+

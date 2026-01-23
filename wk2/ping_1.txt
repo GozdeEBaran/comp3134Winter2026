@@ -1,0 +1,32 @@
+Ping Test from Droplet Server
+==============================
+
+Instructions: 
+1. SSH into your droplet: ssh root@IP_ADDRESS
+2. Run: apt-get update
+3. Run: apt-get install apache2-utils
+4. Run: ping {host_name} -w {time_in_seconds}
+5. Copy and paste the output below
+
+Command used: [PASTE_COMMAND_HERE]
+
+Output:
+-------
+root@comp3134-GB:~# ping sephora.com -w 10
+PING sephora.com (23.39.184.160) 56(84) bytes of data.
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=1 ttl=47 time=33.0 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=2 ttl=47 time=32.1 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=3 ttl=47 time=32.2 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=4 ttl=47 time=32.2 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=5 ttl=47 time=32.2 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=6 ttl=47 time=32.1 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=7 ttl=47 time=33.7 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=8 ttl=47 time=32.1 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=9 ttl=47 time=32.1 ms
+64 bytes from a23-39-184-160.deploy.static.akamaitechnologies.com (23.39.184.160): icmp_seq=10 ttl=47 time=32.1 ms
+
+--- sephora.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 32.079/32.358/33.652/0.503 ms
+root@comp3134-GB:~# 
+

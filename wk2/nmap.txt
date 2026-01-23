@@ -1,0 +1,40 @@
+NMAP Security Audit Results
+===========================
+
+Instructions: 
+1. SSH into your droplet: ssh root@IP_ADDRESS
+2. Install nmap: apt-get install nmap
+3. Verify installation: nmap --version
+4. Execute the commands below and paste outputs
+
+Test 1: Scan 1000 TCP ports
+----------------------------
+Command: nmap {host_name}
+
+Output:
+[PASTE_OUTPUT_HERE]
+
+
+Test 2: Scan a single port
+---------------------------
+Command: nmap -p {port_number} {host_name}
+
+Output:
+[PASTE_OUTPUT_HERE]
+
+
+Test 3: Scan a range of ports
+------------------------------
+Command: nmap -p {start_port_range}-{end_port_range} {host_name}
+
+Output:
+[PASTE_OUTPUT_HERE]
+
+
+Test 4: Additional scan (your choice)
+--------------------------------------
+Command: [PASTE_COMMAND_HERE]
+
+Output:
+[PASTE_OUTPUT_HERE]
+

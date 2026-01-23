@@ -1,0 +1,110 @@
+WHOIS Lookup Results
+====================
+
+
+Domain 1: paint.com
+----------------------------
+Domain Information:
+  Domain Name: paint.com
+  Registered On: 1999-02-17
+  Expires On: 2027-02-17
+  Updated On: 2026-01-18
+  Status: client transfer prohibited
+  Name Servers: ns1.sedoparking.com, ns2.sedoparking.com
+
+Registrar Information:
+  Registrar: NameCheap, Inc.
+  IANA ID: 1068
+  Email: support@namecheap.com
+  Abuse Email: abuse@namecheap.com
+
+Registrant Contact (Domain Owner):
+  Name: P A Gordon
+  Location: Cherry Hill, NJ, US
+  Country: US
+
+===============================================================================
+
+Domain 2: bbclearning.com
+----------------------------
+Domain Information:
+  Domain Name: bbclearning.com
+  Registered On: 2000-02-15
+  Expires On: 2026-02-15
+  Updated On: 2025-02-10
+  Status: client delete prohibited, client transfer prohibited, client update prohibited
+  Name Servers: asia.ns04-bbcstudios.com, aus.ns04-bbcstudios.com, eu.ns04-bbcstudios.com, us.ns04-bbcstudios.com
+
+Registrar Information:
+  Registrar: Nom-iq Ltd. dba COM LAUDE
+  IANA ID: 470
+  Email: abuse@comlaude.com
+
+Registrant Contact (Domain Owner):
+  Name: Privacy Protected (Anonymised)
+  Location: Privacy Protected
+  Country: GB (United Kingdom) 
+
+
+Domain 3: pearson.com
+----------------------------
+Domain Information:
+  Domain Name: pearson.com
+  Registered On: 1996-11-25
+  Expires On: 2026-11-24
+  Updated On: 2025-11-20
+  Status: client transfer prohibited, server delete prohibited, server transfer prohibited, server update prohibited
+  Name Servers: ns1.pearson.com, ns2.pearson.com
+
+Registrar Information:
+  Registrar: CSC Corporate Domains, Inc.
+  IANA ID: 299
+  Email: admin@internationaladmin.com
+
+Registrant Contact (Domain Owner):
+  Name: Pearson plc (Organization)
+  Location: ENG (England)
+  Country: GB (United Kingdom) 
+
+
+Domain 4: trendyol.com
+----------------------------
+Domain Information:
+  Domain Name: trendyol.com
+  Registered On: 2009-10-07
+  Expires On: 2028-10-07
+  Updated On: 2022-09-06
+  Status: client delete prohibited, client renew prohibited, client transfer prohibited, client update prohibited
+  Name Servers: evan.ns.cloudflare.com, lisa.ns.cloudflare.com
+
+Registrar Information:
+  Registrar: GoDaddy.com, LLC
+  IANA ID: 146
+  Email: abuse@godaddy.com
+
+Registrant Contact (Domain Owner):
+  Name: Registration Private (Domains By Proxy, LLC)
+  Location: Tempe, Arizona
+  Country: US (United States) 
+
+
+Domain 5: turkishairlines.com
+----------------------------
+Domain Information:
+  Domain Name: turkishairlines.com
+  Registered On: 1996-05-08
+  Expires On: 2029-06-22
+  Updated On: 2025-01-17
+  Status: client delete prohibited, client transfer prohibited
+  Name Servers: a1-45.akam.net, a10-66.akam.net, a13-67.akam.net, a16-64.akam.net, a3-65.akam.net, a4-66.akam.net
+
+Registrar Information:
+  Registrar: Turkticaret.net Yazilim Hizmetleri Sanayi ve Ticaret A.S.
+  IANA ID: 819
+  Email: abuse@turkticaret.net
+
+Registrant Contact (Domain Owner):
+  Name: GDPR Masked (Privacy Protected)
+  Location: GDPR Masked
+  Country: TR (Turkey)
+
