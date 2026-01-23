@@ -1,40 +1,83 @@
 NMAP Security Audit Results
 ===========================
 
-Instructions: 
-1. SSH into your droplet: ssh root@IP_ADDRESS
-2. Install nmap: apt-get install nmap
-3. Verify installation: nmap --version
-4. Execute the commands below and paste outputs
-
 Test 1: Scan 1000 TCP ports
 ----------------------------
-Command: nmap {host_name}
+Command: nmap google.com
 
 Output:
-[PASTE_OUTPUT_HERE]
+ nmap google.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 22:09 UTC
+Nmap scan report for google.com (192.178.192.102)
+Host is up (0.0031s latency).
+Other addresses for google.com (not scanned): 192.178.192.101 192.178.192.139 192.178.192.100 192.178.192.113 192.178.192.138 2607:f8b0:4023:1807::65 2607:f8b0:4023:1807::66 2607:f8b0:4023:1807::8a 2607:f8b0:4023:1807::64
+rDNS record for 192.178.192.102: lcyyzn-in-f102.1e100.net
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
 
+Nmap done: 1 IP address (1 host up) scanned in 4.34 seconds
+root@comp3134-GB:~# 
 
 Test 2: Scan a single port
 ---------------------------
-Command: nmap -p {port_number} {host_name}
+Command: nmap -p 80 google.com
 
 Output:
-[PASTE_OUTPUT_HERE]
+nmap -p 80 google.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 22:10 UTC
+Nmap scan report for google.com (192.178.192.113)
+Host is up (0.0034s latency).
+Other addresses for google.com (not scanned): 192.178.192.102 192.178.192.139 192.178.192.138 192.178.192.100 192.178.192.101 2607:f8b0:4023:1807::66 2607:f8b0:4023:1807::8a 2607:f8b0:4023:1807::64 2607:f8b0:4023:1807::65
+rDNS record for 192.178.192.113: lcyyzn-in-f113.1e100.net
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
+root@comp3134-GB:~# 
 
 
 Test 3: Scan a range of ports
 ------------------------------
-Command: nmap -p {start_port_range}-{end_port_range} {host_name}
+Command: nmap -p 20-25 google.com
 
 Output:
-[PASTE_OUTPUT_HERE]
+root@comp3134-GB:~# nmap -p 20-25 google.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 22:10 UTC
+Nmap scan report for google.com (192.178.192.100)
+Host is up (0.0033s latency).
+Other addresses for google.com (not scanned): 192.178.192.102 192.178.192.138 192.178.192.139 192.178.192.113 192.178.192.101 2607:f8b0:4023:1807::64 2607:f8b0:4023:1807::65 2607:f8b0:4023:1807::66 2607:f8b0:4023:1807::8a
+rDNS record for 192.178.192.100: lcyyzn-in-f100.1e100.net
+
+PORT   STATE    SERVICE
+20/tcp filtered ftp-data
+21/tcp filtered ftp
+22/tcp filtered ssh
+23/tcp filtered telnet
+24/tcp filtered priv-mail
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 1.27 seconds
+root@comp3134-GB:~# 
 
 
 Test 4: Additional scan (your choice)
 --------------------------------------
-Command: [PASTE_COMMAND_HERE]
+Command:nmap -p 443 google.com
 
 Output:
-[PASTE_OUTPUT_HERE]
+root@comp3134-GB:~# nmap -p 443 google.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 22:11 UTC
+Nmap scan report for google.com (192.178.192.139)
+Host is up (0.0032s latency).
+Other addresses for google.com (not scanned): 192.178.192.101 192.178.192.138 192.178.192.102 192.178.192.113 192.178.192.100 2607:f8b0:4023:1807::64 2607:f8b0:4023:1807::65 2607:f8b0:4023:1807::66 2607:f8b0:4023:1807::8a
+rDNS record for 192.178.192.139: lcyyzn-in-f139.1e100.net
+
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
+root@comp3134-GB:~# 
 
