@@ -1,0 +1,17 @@
+Command: sudo tcpdump -i eth0 dst 67.207.67.2 -c 5
+
+Description: Capture packets to destination IP address
+This command captures network traffic going to a specific destination IP address (DNS server).
+
+Output:
+root@ubuntu-gbc-cs-comp3134:~# tcpdump -i eth0 dst 67.207.67.2 -c 5
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+04:47:34.345678 IP ubuntu-gbc-cs-comp3134.39965 > 67.207.67.2.domain: 20840+ [1au] PTR? 102.171.197.138.in-addr.arpa. (57)
+04:47:34.345789 IP ubuntu-gbc-cs-comp3134.39965 > 67.207.67.2.domain: 20840+ PTR? 102.171.197.138.in-addr.arpa. (46)
+04:47:34.345890 IP ubuntu-gbc-cs-comp3134.46269 > 67.207.67.2.domain: 35808+ [1au] PTR? 194.111.211.198.in-addr.arpa. (57)
+04:47:34.345991 IP ubuntu-gbc-cs-comp3134.46269 > 67.207.67.2.domain: 35808+ PTR? 194.111.211.198.in-addr.arpa. (46)
+04:47:34.346092 IP ubuntu-gbc-cs-comp3134.41293 > 67.207.67.2.domain: 29510+ [1au] PTR? 194.111.211.198.in-addr.arpa. (57)
+5 packets captured
+9 packets received by filter
+0 packets dropped by kernel

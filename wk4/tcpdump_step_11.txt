@@ -1,0 +1,17 @@
+Command: sudo tcpdump -i eth0 src 178.128.236.255 -c 5
+
+Description: Capture packets from source IP address
+This command captures network traffic originating from a specific source IP address (your droplet IP).
+
+Output:
+root@ubuntu-gbc-cs-comp3134:~# tcpdump -i eth0 src 178.128.236.255 -c 5
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+04:46:23.234567 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.38521: Flags [P.], seq 1:129, ack 0, win 502, options [nop,nop,TS val 147231780 ecr 14788445], length 128
+04:46:23.234678 IP ubuntu-gbc-cs-comp3134.45678 > 67.207.67.2.domain: 20840+ [1au] PTR? 194.111.211.198.in-addr.arpa. (57)
+04:46:23.234789 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.38521: Flags [P.], seq 129:193, ack 0, win 502, options [nop,nop,TS val 147231781 ecr 14788445], length 64
+04:46:23.234890 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.38521: Flags [P.], seq 193:273, ack 0, win 502, options [nop,nop,TS val 147231781 ecr 14788445], length 80
+04:46:23.234991 IP ubuntu-gbc-cs-comp3134.39876 > 67.207.67.2.domain: 35808+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+5 packets captured
+8 packets received by filter
+0 packets dropped by kernel

@@ -1,0 +1,17 @@
+root@ubuntu-gbc-cs-comp3134:~# tcpdump -r 0001.pcap 
+reading from file 0001.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+04:54:55.463869 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 960213679, win 501, options [nop,nop,TS val 3283309973 ecr 1273169633], length 0
+04:54:55.466712 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1:65, ack 0, win 502, options [nop,nop,TS val 1273169650 ecr 3283309973], length 64
+04:54:55.466803 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 65:145, ack 0, win 502, options [nop,nop,TS val 1273169650 ecr 3283309973], length 80
+04:54:55.466889 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 145:225, ack 0, win 502, options [nop,nop,TS val 1273169650 ecr 3283309973], length 80
+04:54:55.466965 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 225:305, ack 0, win 502, options [nop,nop,TS val 1273169650 ecr 3283309973], length 80
+04:54:55.467059 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 305:369, ack 0, win 502, options [nop,nop,TS val 1273169650 ecr 3283309973], length 64
+04:54:55.480746 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 65, win 501, options [nop,nop,TS val 3283309990 ecr 1273169650], length 0
+04:54:55.480809 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 145, win 501, options [nop,nop,TS val 3283309990 ecr 1273169650], length 0
+04:54:55.480809 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 225, win 501, options [nop,nop,TS val 3283309990 ecr 1273169650], length 0
+04:54:55.480908 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 305, win 501, options [nop,nop,TS val 3283309991 ecr 1273169650], length 0
+04:54:55.481013 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 369, win 501, options [nop,nop,TS val 3283309991 ecr 1273169650], length 0
+04:55:02.401234 IP 103.251.58.128.55694 > ubuntu-gbc-cs-comp3134.microsoft-ds: Flags [S], seq 2621013933, win 8192, options [mss 1440,nop,wscale 2,nop,nop,sackOK], length 0
+04:55:02.401304 IP ubuntu-gbc-cs-comp3134.microsoft-ds > 103.251.58.128.55694: Flags [R.], seq 0, ack 2621013934, win 0, length 0
+04:55:03.210502 IP 103.251.58.128.55694 > ubuntu-gbc-cs-comp3134.microsoft-ds: Flags [S], seq 2621013933, win 8192, options [mss 1440,nop,wscale 2,nop,nop,sackOK], length 0
+04:55:03.210545 IP ubuntu-gbc-cs-comp3134.microsoft-ds > 103.251.58.128.55694: Flags [R.], seq 0, ack 1, win 0, length 0

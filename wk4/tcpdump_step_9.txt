@@ -1,0 +1,269 @@
+root@ubuntu-gbc-cs-comp3134:~# tcpdump -i eth0 tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+04:57:31.910677 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 960260735:960260863, ack 2055545088, win 502, options [nop,nop,TS val 1273326094 ecr 3283466418], length 128
+04:57:31.910783 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 128:272, ack 1, win 502, options [nop,nop,TS val 1273326094 ecr 3283466418], length 144
+04:57:31.910900 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 272:496, ack 1, win 502, options [nop,nop,TS val 1273326094 ecr 3283466418], length 224
+04:57:31.925006 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 128, win 501, options [nop,nop,TS val 3283466435 ecr 1273326094], length 0
+04:57:31.925006 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 272, win 501, options [nop,nop,TS val 3283466436 ecr 1273326094], length 0
+04:57:31.925066 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 496, win 501, options [nop,nop,TS val 3283466436 ecr 1273326094], length 0
+04:57:32.000316 IP ubuntu-gbc-cs-comp3134.36384 > 67.207.67.2.domain: Flags [S], seq 893687816, win 64240, options [mss 1460,sackOK,TS val 739951520 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+04:57:32.001848 IP 67.207.67.2.domain > ubuntu-gbc-cs-comp3134.36384: Flags [S.], seq 1827240405, ack 893687817, win 65160, options [mss 1460,sackOK,TS val 2146404291 ecr 739951520,nop,wscale 9], length 0
+04:57:32.001875 IP ubuntu-gbc-cs-comp3134.36384 > 67.207.67.2.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 739951521 ecr 2146404291], length 0
+04:57:32.001945 IP ubuntu-gbc-cs-comp3134.36384 > 67.207.67.2.domain: Flags [P.], seq 1:48, ack 1, win 502, options [nop,nop,TS val 739951521 ecr 2146404291], length 47 36766+ PTR? 66.188.243.162.in-addr.arpa. (45)
+04:57:32.002638 IP 67.207.67.2.domain > ubuntu-gbc-cs-comp3134.36384: Flags [.], ack 48, win 128, options [nop,nop,TS val 2146404292 ecr 739951521], length 0
+04:57:32.002805 IP 67.207.67.2.domain > ubuntu-gbc-cs-comp3134.36384: Flags [P.], seq 1:115, ack 48, win 128, options [nop,nop,TS val 2146404292 ecr 739951521], length 114 36766 NXDomain 0/1/0 (112)
+04:57:32.002817 IP ubuntu-gbc-cs-comp3134.36384 > 67.207.67.2.domain: Flags [.], ack 115, win 502, options [nop,nop,TS val 739951522 ecr 2146404292], length 0
+04:57:32.004968 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 496:752, ack 1, win 502, options [nop,nop,TS val 1273326188 ecr 3283466436], length 256
+04:57:32.005100 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 752:1040, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 288
+04:57:32.005153 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1040:1104, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 64
+04:57:32.005272 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1104:1392, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 288
+04:57:32.005378 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1392:1664, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 272
+04:57:32.005584 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1664:1872, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 208
+04:57:32.005723 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1872:1936, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 64
+04:57:32.005743 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 1936:2144, ack 1, win 502, options [nop,nop,TS val 1273326189 ecr 3283466436], length 208
+04:57:32.006123 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 2144:2208, ack 1, win 502, options [nop,nop,TS val 1273326190 ecr 3283466436], length 64
+04:57:32.018959 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 752, win 501, options [nop,nop,TS val 3283466530 ecr 1273326188], length 0
+04:57:32.018996 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 1040, win 501, options [nop,nop,TS val 3283466530 ecr 1273326189], length 0
+04:57:32.019071 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 1104, win 501, options [nop,nop,TS val 3283466530 ecr 1273326189], length 0
+04:57:32.029414 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 2208, win 501, options [nop,nop,TS val 3283466540 ecr 1273326189], length 0
+04:57:32.103902 IP ubuntu-gbc-cs-comp3134.36384 > 67.207.67.2.domain: Flags [P.], seq 48:92, ack 115, win 502, options [nop,nop,TS val 739951623 ecr 2146404292], length 44 27825+ PTR? 2.67.207.67.in-addr.arpa. (42)
+04:57:32.104702 IP 67.207.67.2.domain > ubuntu-gbc-cs-comp3134.36384: Flags [P.], seq 115:226, ack 92, win 128, options [nop,nop,TS val 2146404394 ecr 739951623], length 111 27825 NXDomain 0/1/0 (109)
+04:57:32.104813 IP ubuntu-gbc-cs-comp3134.36384 > 67.207.67.2.domain: Flags [.], ack 226, win 502, options [nop,nop,TS val 739951624 ecr 2146404394], length 0
+04:57:32.105763 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 2208:2464, ack 1, win 502, options [nop,nop,TS val 1273326289 ecr 3283466540], length 256
+04:57:32.105990 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 2464:2528, ack 1, win 502, options [nop,nop,TS val 1273326289 ecr 3283466540], length 64
+04:57:32.106092 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 2528:2784, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 256
+04:57:32.106290 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 2784:3056, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 272
+04:57:32.106435 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 3056:3392, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 336
+04:57:32.106559 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 3392:3456, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 64
+04:57:32.106640 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 3456:3664, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 208
+04:57:32.106941 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 3664:4048, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 384
+04:57:32.107047 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 4048:4320, ack 1, win 502, options [nop,nop,TS val 1273326290 ecr 3283466540], length 272
+04:57:32.107149 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 4320:4544, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 224
+04:57:32.107283 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 4544:4608, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 64
+04:57:32.107365 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 4608:4832, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 224
+04:57:32.107461 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 4832:4896, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 64
+04:57:32.107493 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 4896:5120, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 224
+04:57:32.107630 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 5120:5184, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 64
+04:57:32.107708 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 5184:5408, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 224
+04:57:32.107771 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 5408:5472, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 64
+04:57:32.107855 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 5472:5696, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 224
+04:57:32.107934 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 5696:5760, ack 1, win 502, options [nop,nop,TS val 1273326291 ecr 3283466540], length 64
+04:57:32.120813 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 3664, win 492, options [nop,nop,TS val 3283466631 ecr 1273326289], length 0
+04:57:32.120882 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 5760:8048, ack 1, win 502, options [nop,nop,TS val 1273326304 ecr 3283466631], length 2288
+04:57:32.121389 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 5120, win 481, options [nop,nop,TS val 3283466632 ecr 1273326290], length 0
+04:57:32.129270 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 5760, win 501, options [nop,nop,TS val 3283466640 ecr 1273326291], length 0
+04:57:32.134992 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 8048, win 499, options [nop,nop,TS val 3283466646 ecr 1273326304], length 0
+04:57:32.207459 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 8048:8320, ack 1, win 502, options [nop,nop,TS val 1273326391 ecr 3283466646], length 272
+04:57:32.207670 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 8320:8384, ack 1, win 502, options [nop,nop,TS val 1273326391 ecr 3283466646], length 64
+04:57:32.207703 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 8384:8640, ack 1, win 502, options [nop,nop,TS val 1273326391 ecr 3283466646], length 256
+04:57:32.207802 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 8640:8704, ack 1, win 502, options [nop,nop,TS val 1273326391 ecr 3283466646], length 64
+04:57:32.207928 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 8704:8976, ack 1, win 502, options [nop,nop,TS val 1273326391 ecr 3283466646], length 272
+04:57:32.208034 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 8976:9264, ack 1, win 502, options [nop,nop,TS val 1273326391 ecr 3283466646], length 288
+04:57:32.208152 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 9264:9488, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 224
+04:57:32.208253 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 9488:9552, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 64
+04:57:32.208361 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 9552:9776, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 224
+04:57:32.208448 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 9776:9840, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 64
+04:57:32.208556 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 9840:10064, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 224
+04:57:32.208653 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 10064:10416, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 352
+04:57:32.208825 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 10416:10640, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 224
+04:57:32.208924 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 10640:10928, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 288
+04:57:32.209014 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 10928:11216, ack 1, win 502, options [nop,nop,TS val 1273326392 ecr 3283466646], length 288
+04:57:32.209085 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 11216:11280, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 64
+04:57:32.209174 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 11280:11568, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209257 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 11568:11856, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209337 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 11856:12144, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209417 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 12144:12432, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209496 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 12432:12720, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209577 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 12720:13008, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209655 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 13008:13296, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209740 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 13296:13584, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209821 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 13584:13872, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.209984 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 13872:14160, ack 1, win 502, options [nop,nop,TS val 1273326393 ecr 3283466646], length 288
+04:57:32.210094 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 14160:14384, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 224
+04:57:32.210197 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 14384:14672, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 288
+04:57:32.210285 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 14672:14976, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 304
+04:57:32.210392 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 14976:15328, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 352
+04:57:32.210513 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 15328:15552, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 224
+04:57:32.210610 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 15552:15840, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 288
+04:57:32.210725 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 15840:15904, ack 1, win 502, options [nop,nop,TS val 1273326394 ecr 3283466646], length 64
+04:57:32.232353 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 15904, win 438, options [nop,nop,TS val 3283466743 ecr 1273326391], length 0
+04:57:32.311374 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 15904:16128, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 224
+04:57:32.311503 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 16128:16416, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 288
+04:57:32.311595 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 16416:16480, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 64
+04:57:32.311759 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 16480:16768, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 288
+04:57:32.311852 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 16768:17056, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 288
+04:57:32.311958 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 17056:17344, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 288
+04:57:32.312067 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 17344:17632, ack 1, win 502, options [nop,nop,TS val 1273326495 ecr 3283466743], length 288
+04:57:32.312190 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 17632:18144, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 512
+04:57:32.312301 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 18144:18208, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 64
+04:57:32.312414 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 18208:18496, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 288
+04:57:32.312525 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 18496:18720, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 224
+04:57:32.312628 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 18720:19088, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 368
+04:57:32.312830 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 19088:19328, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 240
+04:57:32.312945 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 19328:19632, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 304
+04:57:32.313052 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 19632:19696, ack 1, win 502, options [nop,nop,TS val 1273326496 ecr 3283466743], length 64
+04:57:32.313161 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 19696:20000, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 304
+04:57:32.313276 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 20000:20240, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 240
+04:57:32.313384 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 20240:20304, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 64
+04:57:32.313495 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 20304:20608, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 304
+04:57:32.313596 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 20608:20848, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 240
+04:57:32.313702 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 20848:21216, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 368
+04:57:32.313808 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 21216:21520, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 304
+04:57:32.313917 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 21520:22064, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 544
+04:57:32.314022 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 22064:22432, ack 1, win 502, options [nop,nop,TS val 1273326497 ecr 3283466743], length 368
+04:57:32.314241 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 22432:22736, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 304
+04:57:32.314380 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 22736:23040, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 304
+04:57:32.314486 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 23040:23584, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 544
+04:57:32.314615 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 23584:23952, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 368
+04:57:32.314724 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 23952:24496, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 544
+04:57:32.314854 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 24496:24864, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 368
+04:57:32.314960 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 24864:25408, ack 1, win 502, options [nop,nop,TS val 1273326498 ecr 3283466743], length 544
+04:57:32.315105 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 25408:25776, ack 1, win 502, options [nop,nop,TS val 1273326499 ecr 3283466743], length 368
+04:57:32.315262 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 25776:26064, ack 1, win 502, options [nop,nop,TS val 1273326499 ecr 3283466743], length 288
+04:57:32.326167 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 17632, win 491, options [nop,nop,TS val 3283466837 ecr 1273326495], length 0
+04:57:32.326698 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 19088, win 480, options [nop,nop,TS val 3283466837 ecr 1273326496], length 0
+04:57:32.327542 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 20608, win 469, options [nop,nop,TS val 3283466838 ecr 1273326496], length 0
+04:57:32.328137 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 22064, win 458, options [nop,nop,TS val 3283466839 ecr 1273326497], length 0
+04:57:32.328450 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 23584, win 447, options [nop,nop,TS val 3283466839 ecr 1273326497], length 0
+04:57:32.328993 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 25408, win 433, options [nop,nop,TS val 3283466840 ecr 1273326498], length 0
+04:57:32.371161 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 25776:26064, ack 1, win 502, options [nop,nop,TS val 1273326555 ecr 3283466840], length 288
+04:57:32.371427 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26064, win 461, options [nop,nop,TS val 3283466882 ecr 1273326499], length 0
+04:57:32.385274 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26064, win 461, options [nop,nop,TS val 3283466896 ecr 1273326555,nop,nop,sack 1 {25776:26064}], length 0
+04:57:32.415412 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 26064:26304, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 240
+04:57:32.415555 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 26304:26608, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 304
+04:57:32.415637 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 26608:26672, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 64
+04:57:32.415759 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 26672:26912, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 240
+04:57:32.415867 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 26912:26976, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 64
+04:57:32.415992 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 26976:27216, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 240
+04:57:32.416087 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 27216:27280, ack 1, win 502, options [nop,nop,TS val 1273326599 ecr 3283466896], length 64
+04:57:32.416210 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 27280:27520, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 240
+04:57:32.416357 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 27520:27584, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 64
+04:57:32.416414 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 27584:27824, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 240
+04:57:32.416551 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 27824:27888, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 64
+04:57:32.416658 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 27888:28128, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 240
+04:57:32.416888 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 28128:28192, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 64
+04:57:32.416941 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 28192:28432, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 240
+04:57:32.417014 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 28432:28496, ack 1, win 502, options [nop,nop,TS val 1273326600 ecr 3283466896], length 64
+04:57:32.417138 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 28496:28736, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 240
+04:57:32.417274 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 28736:28800, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 64
+04:57:32.417347 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 28800:29040, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 240
+04:57:32.417491 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 29040:29344, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 304
+04:57:32.417633 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 29344:29648, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 304
+04:57:32.417783 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 29648:29952, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 304
+04:57:32.417901 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 29952:30016, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 64
+04:57:32.418010 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 30016:30256, ack 1, win 502, options [nop,nop,TS val 1273326601 ecr 3283466896], length 240
+04:57:32.418155 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 30256:30320, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 64
+04:57:32.418236 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 30320:30560, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 240
+04:57:32.418378 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 30560:30624, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 64
+04:57:32.418464 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 30624:30864, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 240
+04:57:32.418636 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 30864:31104, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 240
+04:57:32.418778 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 31104:31344, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 240
+04:57:32.418914 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 31344:31408, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 64
+04:57:32.418947 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 31408:31824, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 416
+04:57:32.419071 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 31824:32416, ack 1, win 502, options [nop,nop,TS val 1273326602 ecr 3283466896], length 592
+04:57:32.419292 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 32416:32832, ack 1, win 502, options [nop,nop,TS val 1273326603 ecr 3283466896], length 416
+04:57:32.419446 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 32832:33600, ack 1, win 502, options [nop,nop,TS val 1273326603 ecr 3283466896], length 768
+04:57:32.419589 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 33600:34192, ack 1, win 502, options [nop,nop,TS val 1273326603 ecr 3283466896], length 592
+04:57:32.419760 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 34192:34592, ack 1, win 502, options [nop,nop,TS val 1273326603 ecr 3283466896], length 400
+04:57:32.419945 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 34592:34976, ack 1, win 502, options [nop,nop,TS val 1273326603 ecr 3283466896], length 384
+04:57:32.420157 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 34976:35520, ack 1, win 502, options [nop,nop,TS val 1273326604 ecr 3283466896], length 544
+04:57:32.420527 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 35520:36240, ack 1, win 502, options [nop,nop,TS val 1273326604 ecr 3283466896], length 720
+04:57:32.429549 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26304, win 501, options [nop,nop,TS val 3283466940 ecr 1273326599], length 0
+04:57:32.429607 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26608, win 501, options [nop,nop,TS val 3283466940 ecr 1273326599], length 0
+04:57:32.429710 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26672, win 501, options [nop,nop,TS val 3283466940 ecr 1273326599], length 0
+04:57:32.429710 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26912, win 501, options [nop,nop,TS val 3283466940 ecr 1273326599], length 0
+04:57:32.429793 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 26976, win 501, options [nop,nop,TS val 3283466941 ecr 1273326599], length 0
+04:57:32.429911 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 27216, win 500, options [nop,nop,TS val 3283466941 ecr 1273326599], length 0
+04:57:32.430046 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 27280, win 500, options [nop,nop,TS val 3283466941 ecr 1273326599], length 0
+04:57:32.430175 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 27520, win 499, options [nop,nop,TS val 3283466941 ecr 1273326600], length 0
+04:57:32.430175 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 27584, win 499, options [nop,nop,TS val 3283466941 ecr 1273326600], length 0
+04:57:32.430282 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 27824, win 498, options [nop,nop,TS val 3283466941 ecr 1273326600], length 0
+04:57:32.430438 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 27888, win 498, options [nop,nop,TS val 3283466941 ecr 1273326600], length 0
+04:57:32.430593 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 28128, win 497, options [nop,nop,TS val 3283466941 ecr 1273326600], length 0
+04:57:32.430766 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 28192, win 497, options [nop,nop,TS val 3283466942 ecr 1273326600], length 0
+04:57:32.430877 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 28432, win 496, options [nop,nop,TS val 3283466942 ecr 1273326600], length 0
+04:57:32.430987 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 28496, win 496, options [nop,nop,TS val 3283466942 ecr 1273326600], length 0
+04:57:32.431724 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 29952, win 485, options [nop,nop,TS val 3283466942 ecr 1273326601], length 0
+04:57:32.433097 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 31408, win 474, options [nop,nop,TS val 3283466944 ecr 1273326601], length 0
+04:57:32.433489 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 33600, win 457, options [nop,nop,TS val 3283466944 ecr 1273326602], length 0
+04:57:32.434324 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 35520, win 442, options [nop,nop,TS val 3283466945 ecr 1273326603], length 0
+04:57:32.479213 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 36240, win 442, options [nop,nop,TS val 3283466990 ecr 1273326604], length 0
+04:57:32.519477 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 36240:36480, ack 1, win 502, options [nop,nop,TS val 1273326703 ecr 3283466990], length 240
+04:57:32.519624 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 36480:36784, ack 1, win 502, options [nop,nop,TS val 1273326703 ecr 3283466990], length 304
+04:57:32.519746 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 36784:36848, ack 1, win 502, options [nop,nop,TS val 1273326703 ecr 3283466990], length 64
+04:57:32.519898 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 36848:37088, ack 1, win 502, options [nop,nop,TS val 1273326703 ecr 3283466990], length 240
+04:57:32.520029 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 37088:37328, ack 1, win 502, options [nop,nop,TS val 1273326703 ecr 3283466990], length 240
+04:57:32.520175 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 37328:37744, ack 1, win 502, options [nop,nop,TS val 1273326704 ecr 3283466990], length 416
+04:57:32.520373 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 37744:38336, ack 1, win 502, options [nop,nop,TS val 1273326704 ecr 3283466990], length 592
+04:57:32.520630 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 38336:39456, ack 1, win 502, options [nop,nop,TS val 1273326704 ecr 3283466990], length 1120
+04:57:32.520859 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 39456:40048, ack 1, win 502, options [nop,nop,TS val 1273326704 ecr 3283466990], length 592
+04:57:32.520979 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 40048:40352, ack 1, win 502, options [nop,nop,TS val 1273326704 ecr 3283466990], length 304
+04:57:32.521128 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 40352:40592, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 240
+04:57:32.521241 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 40592:40832, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 240
+04:57:32.521380 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 40832:40896, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 64
+04:57:32.521428 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 40896:41488, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 592
+04:57:32.521665 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 41488:42080, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 592
+04:57:32.521798 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 42080:42144, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 64
+04:57:32.522005 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 42144:42384, ack 1, win 502, options [nop,nop,TS val 1273326705 ecr 3283466990], length 240
+04:57:32.522383 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 42384:44048, ack 1, win 502, options [nop,nop,TS val 1273326706 ecr 3283466990], length 1664
+04:57:32.522547 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 44048:44624, ack 1, win 502, options [nop,nop,TS val 1273326706 ecr 3283466990], length 576
+04:57:32.522692 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 44624:45328, ack 1, win 502, options [nop,nop,TS val 1273326706 ecr 3283466990], length 704
+04:57:32.522831 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 45328:45712, ack 1, win 502, options [nop,nop,TS val 1273326706 ecr 3283466990], length 384
+04:57:32.522979 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 45712:45936, ack 1, win 502, options [nop,nop,TS val 1273326706 ecr 3283466990], length 224
+04:57:32.523130 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 45936:46160, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 224
+04:57:32.523266 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 46160:46384, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 224
+04:57:32.523390 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 46384:46448, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 64
+04:57:32.523451 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 46448:46832, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 384
+04:57:32.523624 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 46832:47536, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 704
+04:57:32.523751 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 47536:48080, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 544
+04:57:32.523861 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 48080:48304, ack 1, win 502, options [nop,nop,TS val 1273326707 ecr 3283466990], length 224
+04:57:32.534163 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 37744, win 482, options [nop,nop,TS val 3283467045 ecr 1273326703], length 0
+04:57:32.534571 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 39456, win 472, options [nop,nop,TS val 3283467045 ecr 1273326704], length 0
+04:57:32.535588 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 41488, win 457, options [nop,nop,TS val 3283467046 ecr 1273326704], length 0
+04:57:32.535689 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 42144, win 452, options [nop,nop,TS val 3283467046 ecr 1273326705], length 0
+04:57:32.536333 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 44048, win 438, options [nop,nop,TS val 3283467047 ecr 1273326705], length 0
+04:57:32.536811 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 45712, win 425, options [nop,nop,TS val 3283467048 ecr 1273326706], length 0
+04:57:32.537565 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 47536, win 411, options [nop,nop,TS val 3283467048 ecr 1273326706], length 0
+04:57:32.583188 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 48080:48304, ack 1, win 502, options [nop,nop,TS val 1273326767 ecr 3283467048], length 224
+04:57:32.583229 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 48304, win 405, options [nop,nop,TS val 3283467094 ecr 1273326707], length 0
+04:57:32.597198 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 48304, win 458, options [nop,nop,TS val 3283467108 ecr 1273326767,nop,nop,sack 1 {48080:48304}], length 0
+04:57:32.623486 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 48304:48544, ack 1, win 502, options [nop,nop,TS val 1273326807 ecr 3283467108], length 240
+04:57:32.623687 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 48544:48784, ack 1, win 502, options [nop,nop,TS val 1273326807 ecr 3283467108], length 240
+04:57:32.623923 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 48784:49376, ack 1, win 502, options [nop,nop,TS val 1273326807 ecr 3283467108], length 592
+04:57:32.624092 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 49376:49792, ack 1, win 502, options [nop,nop,TS val 1273326808 ecr 3283467108], length 416
+04:57:32.624250 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 49792:50032, ack 1, win 502, options [nop,nop,TS val 1273326808 ecr 3283467108], length 240
+04:57:32.624356 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 50032:50336, ack 1, win 502, options [nop,nop,TS val 1273326808 ecr 3283467108], length 304
+04:57:32.624540 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 50336:50816, ack 1, win 502, options [nop,nop,TS val 1273326808 ecr 3283467108], length 480
+04:57:32.624704 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 50816:51408, ack 1, win 502, options [nop,nop,TS val 1273326808 ecr 3283467108], length 592
+04:57:32.625123 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 51408:52528, ack 1, win 502, options [nop,nop,TS val 1273326809 ecr 3283467108], length 1120
+04:57:32.625336 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 52528:53296, ack 1, win 502, options [nop,nop,TS val 1273326809 ecr 3283467108], length 768
+04:57:32.625505 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 53296:53712, ack 1, win 502, options [nop,nop,TS val 1273326809 ecr 3283467108], length 416
+04:57:32.625716 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 53712:54128, ack 1, win 502, options [nop,nop,TS val 1273326809 ecr 3283467108], length 416
+04:57:32.625904 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 54128:54688, ack 1, win 502, options [nop,nop,TS val 1273326809 ecr 3283467108], length 560
+04:57:32.626099 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 54688:55232, ack 1, win 502, options [nop,nop,TS val 1273326810 ecr 3283467108], length 544
+04:57:32.626285 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 55232:55792, ack 1, win 502, options [nop,nop,TS val 1273326810 ecr 3283467108], length 560
+04:57:32.626434 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 55792:56208, ack 1, win 502, options [nop,nop,TS val 1273326810 ecr 3283467108], length 416
+04:57:32.626579 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 56208:56272, ack 1, win 502, options [nop,nop,TS val 1273326810 ecr 3283467108], length 64
+04:57:32.637573 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 48544, win 501, options [nop,nop,TS val 3283467148 ecr 1273326807], length 0
+04:57:32.637683 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 48784, win 501, options [nop,nop,TS val 3283467148 ecr 1273326807], length 0
+04:57:32.637819 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 49376, win 501, options [nop,nop,TS val 3283467149 ecr 1273326807], length 0
+04:57:32.637994 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 49792, win 498, options [nop,nop,TS val 3283467149 ecr 1273326808], length 0
+04:57:32.638185 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 50032, win 497, options [nop,nop,TS val 3283467149 ecr 1273326808], length 0
+04:57:32.638278 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 50336, win 495, options [nop,nop,TS val 3283467149 ecr 1273326808], length 0
+04:57:32.638432 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 50816, win 492, options [nop,nop,TS val 3283467149 ecr 1273326808], length 0
+04:57:32.638729 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 51408, win 488, options [nop,nop,TS val 3283467150 ecr 1273326808], length 0
+04:57:32.639043 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 52528, win 480, options [nop,nop,TS val 3283467150 ecr 1273326809], length 0
+04:57:32.639205 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 53296, win 474, options [nop,nop,TS val 3283467150 ecr 1273326809], length 0
+04:57:32.639347 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 53712, win 471, options [nop,nop,TS val 3283467150 ecr 1273326809], length 0
+04:57:32.639570 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 54128, win 468, options [nop,nop,TS val 3283467150 ecr 1273326809], length 0
+04:57:32.639764 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 54688, win 464, options [nop,nop,TS val 3283467151 ecr 1273326809], length 0
+04:57:32.640299 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 55232, win 460, options [nop,nop,TS val 3283467151 ecr 1273326810], length 0
+04:57:32.640299 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 55792, win 456, options [nop,nop,TS val 3283467151 ecr 1273326810], length 0
+04:57:32.683157 IP ubuntu-gbc-cs-comp3134.ssh > 162.243.188.66.9029: Flags [P.], seq 56208:56272, ack 1, win 502, options [nop,nop,TS val 1273326867 ecr 3283467151], length 64
+04:57:32.683195 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 56272, win 453, options [nop,nop,TS val 3283467194 ecr 1273326810], length 0
+04:57:32.697215 IP 162.243.188.66.9029 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 56272, win 453, options [nop,nop,TS val 3283467208 ecr 1273326867,nop,nop,sack 1 {56208:56272}], length 0
+^C
+262 packets captured
+296 packets received by filter
+0 packets dropped by kernel

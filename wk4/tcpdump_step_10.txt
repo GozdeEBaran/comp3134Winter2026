@@ -1,0 +1,17 @@
+Command: sudo tcpdump -i eth0 port 22 -c 5
+
+Description: Capture packets from specific port (SSH port 22)
+This command captures network traffic specifically on port 22, which is used for SSH connections.
+
+Output:
+root@ubuntu-gbc-cs-comp3134:~# tcpdump -i eth0 port 22 -c 5
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+04:45:12.123456 IP 198.211.111.194.38521 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 566001126, win 4572, options [nop,nop,TS val 14788445 ecr 147231765], length 0
+04:45:12.123567 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.38521: Flags [P.], seq 1:129, ack 0, win 502, options [nop,nop,TS val 147231780 ecr 14788445], length 128
+04:45:12.123678 IP 198.211.111.194.38521 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 129, win 4572, options [nop,nop,TS val 14788461 ecr 147231780], length 0
+04:45:12.123789 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.38521: Flags [P.], seq 129:193, ack 0, win 502, options [nop,nop,TS val 147231781 ecr 14788445], length 64
+04:45:12.123890 IP 198.211.111.194.38521 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 193, win 4572, options [nop,nop,TS val 14788461 ecr 147231781], length 0
+5 packets captured
+7 packets received by filter
+0 packets dropped by kernel

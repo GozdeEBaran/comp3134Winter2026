@@ -1,0 +1,11 @@
+root@ubuntu-gbc-cs-comp3134:~# tcpdump -c 5 -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+04:43:34.068903 IP 198.211.111.194.47327 > ubuntu-gbc-cs-comp3134.ssh: Flags [.], ack 1776260080, win 501, options [nop,nop,TS val 2077890003 ecr 147327793], length 0
+04:43:34.070252 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.47327: Flags [P.], seq 1:129, ack 0, win 502, options [nop,nop,TS val 147327808 ecr 2077890003], length 128
+04:43:34.070351 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.47327: Flags [P.], seq 129:273, ack 0, win 502, options [nop,nop,TS val 147327808 ecr 2077890003], length 144
+04:43:34.070431 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.47327: Flags [P.], seq 273:353, ack 0, win 502, options [nop,nop,TS val 147327808 ecr 2077890003], length 80
+04:43:34.070499 IP ubuntu-gbc-cs-comp3134.ssh > 198.211.111.194.47327: Flags [P.], seq 353:433, ack 0, win 502, options [nop,nop,TS val 147327808 ecr 2077890003], length 80
+5 packets captured
+37 packets received by filter
+0 packets dropped by kernel
