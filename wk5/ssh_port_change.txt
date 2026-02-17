@@ -1,0 +1,6 @@
+Step 6 - Restart the SSH service (run on your remote server):
+sudo service sshd restart
+
+Step 7 - Connect via SSH using the new port (run from Git Bash on your local machine):
+ssh -p 2222 gozde@198.96.85.21
+
